@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Pull Docker image
-      run: docker pull ghcr.io/levep/mymodel:latest
+      run: docker pull ghcr.io/fadykittan/mymodel:latest
 
     - name: Train model
       run: |

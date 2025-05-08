@@ -1,11 +1,12 @@
 name: CI/CD Pipeline  # Name of the GitHub Actions workflow
 # test
 on:
-  push:
-    branches: [main]  # Trigger the workflow on push to the 'master' branch
+  workflow_dispatch:
+  #push:
+    #branches: [main]  # Trigger the workflow on push to the 'master' branch
 
 env:
-  IMAGE_NAME: levep/mymodel  # Define an environment variable for the Docker image name
+  IMAGE_NAME: fadykittan/mymodel  # Define an environment variable for the Docker image name
 
 jobs:
 
